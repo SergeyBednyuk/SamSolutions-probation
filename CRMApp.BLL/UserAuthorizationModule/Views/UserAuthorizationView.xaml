@@ -1,0 +1,110 @@
+﻿<UserControl
+    x:Class="UserAuthorizationModule.Views.UserAuthorizationView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:UserAuthorizationModule.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:viewModel="clr-namespace:UserAuthorizationModule.ViewModels"
+    MinWidth="640"
+    MinHeight="480"
+    d:DataContext="{d:DesignInstance Type=viewModel:UserAuthorizationViewModel,
+                                     IsDesignTimeCreatable=False}"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="ProgtrammNameStyle" TargetType="ContentControl">
+            <Setter Property="Background" Value="CornflowerBlue" />
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ContentControl Grid.ColumnSpan="7" Style="{StaticResource ProgtrammNameStyle}">
+            <StackPanel Background="LightSkyBlue" Orientation="Horizontal">
+                <Image
+                    MaxHeight="30"
+                    Margin="5"
+                    Source="../Assets/Pictures/App_Logo.png" />
+                <TextBlock
+                    Margin="5,20"
+                    Text="CRM App"
+                    TextAlignment="Center" />
+            </StackPanel>
+        </ContentControl>
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="2"
+            Grid.ColumnSpan="3"
+            Margin="5,0"
+            FontSize="40"
+            Text="Authorization" />
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="5"
+            FontSize="15"
+            Text="Login" />
+        <telerik:RadWatermarkTextBox
+            Grid.Row="5"
+            Grid.Column="2"
+            Margin="5,20"
+            Text="{Binding LoginAndPassword.Login, UpdateSourceTrigger=PropertyChanged}"
+            TextAlignment="Center" />
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="3"
+            Margin="5"
+            FontSize="15"
+            Text="Password" />
+        <telerik:RadWatermarkTextBox
+            Grid.Row="5"
+            Grid.Column="3"
+            Margin="5,20"
+            FontSize="15"
+            Text="{Binding LoginAndPassword.Password, UpdateSourceTrigger=PropertyChanged}"
+            TextAlignment="Center" />
+        <telerik:RadButton
+            Grid.Row="6"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="5"
+            Command="{Binding EnterCommand}"
+            FontSize="15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Margin="5"
+                    VerticalAlignment="Center"
+                    Text="Enter"
+                    TextAlignment="Center" />
+                <Image
+                    MaxHeight="30"
+                    Margin="20,5"
+                    Source="../Assets/Pictures/login_picture.png" />
+            </StackPanel>
+        </telerik:RadButton>
+    </Grid>
+</UserControl>

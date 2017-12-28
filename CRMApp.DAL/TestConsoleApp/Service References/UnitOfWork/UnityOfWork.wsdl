@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UnityOfWork" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UserDbDll.Models" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUnityOfWork_GetAllOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrders" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrder" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrder" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrder" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClients" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClient" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateClient" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClient" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClient" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllLoginAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLoginAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllLoginAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLoginAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetLoginAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetLoginAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateLoginAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLoginAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateLoginAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLoginAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateLoginAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLoginAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateLoginAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLoginAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteLoginAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLoginAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteLoginAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLoginAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_Save_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_Save_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllClientDtos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClientDtos" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllClientDtos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClientDtosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrderDtos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDtos" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrderDtos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDtosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllUserDtos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserDtos" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllUserDtos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserDtosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrdersCurrentUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrdersCurrentUser" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrdersCurrentUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrdersCurrentUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrdersCurrentClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrdersCurrentClient" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrdersCurrentClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrdersCurrentClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrderDtosTheCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDtosTheCompany" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllOrderDtosTheCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderDtosTheCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UserDtoAuthorization_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserDtoAuthorization" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_UserDtoAuthorization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserDtoAuthorizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllClientsCurrentUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClientsCurrentUser" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_GetAllClientsCurrentUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClientsCurrentUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AppUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppUsers" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AppUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AddLoginAndPasswords_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddLoginAndPasswords" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AddLoginAndPasswords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddLoginAndPasswordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AddClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddClients" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AddClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AddOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrders" />
+  </wsdl:message>
+  <wsdl:message name="IUnityOfWork_AddOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrdersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUnityOfWork">
+    <wsdl:operation name="GetAllOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersRepository/GetAllOrders" message="tns:IUnityOfWork_GetAllOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersRepository/GetAllOrdersResponse" message="tns:IUnityOfWork_GetAllOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersRepository/GetOrder" message="tns:IUnityOfWork_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersRepository/GetOrderResponse" message="tns:IUnityOfWork_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersRepository/CreateOrder" message="tns:IUnityOfWork_CreateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersRepository/CreateOrderResponse" message="tns:IUnityOfWork_CreateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersRepository/UpdateOrder" message="tns:IUnityOfWork_UpdateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersRepository/UpdateOrderResponse" message="tns:IUnityOfWork_UpdateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersRepository/DeleteOrder" message="tns:IUnityOfWork_DeleteOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersRepository/DeleteOrderResponse" message="tns:IUnityOfWork_DeleteOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientsRepository/GetAllClients" message="tns:IUnityOfWork_GetAllClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientsRepository/GetAllClientsResponse" message="tns:IUnityOfWork_GetAllClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientsRepository/GetClient" message="tns:IUnityOfWork_GetClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientsRepository/GetClientResponse" message="tns:IUnityOfWork_GetClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientsRepository/CreateClient" message="tns:IUnityOfWork_CreateClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientsRepository/CreateClientResponse" message="tns:IUnityOfWork_CreateClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientsRepository/UpdateClient" message="tns:IUnityOfWork_UpdateClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientsRepository/UpdateClientResponse" message="tns:IUnityOfWork_UpdateClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientsRepository/DeleteClient" message="tns:IUnityOfWork_DeleteClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientsRepository/DeleteClientResponse" message="tns:IUnityOfWork_DeleteClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLoginAndPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/GetAllLoginAndPassword" message="tns:IUnityOfWork_GetAllLoginAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/GetAllLoginAndPasswordResponse" message="tns:IUnityOfWork_GetAllLoginAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginAndPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/GetLoginAndPassword" message="tns:IUnityOfWork_GetLoginAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/GetLoginAndPasswordResponse" message="tns:IUnityOfWork_GetLoginAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLoginAndPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/CreateLoginAndPassword" message="tns:IUnityOfWork_CreateLoginAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/CreateLoginAndPasswordResponse" message="tns:IUnityOfWork_CreateLoginAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoginAndPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/UpdateLoginAndPassword" message="tns:IUnityOfWork_UpdateLoginAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/UpdateLoginAndPasswordResponse" message="tns:IUnityOfWork_UpdateLoginAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoginAndPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/DeleteLoginAndPassword" message="tns:IUnityOfWork_DeleteLoginAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoginAndPasswordsRepository/DeleteLoginAndPasswordResponse" message="tns:IUnityOfWork_DeleteLoginAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsersRepository/GetAllUsers" message="tns:IUnityOfWork_GetAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsersRepository/GetAllUsersResponse" message="tns:IUnityOfWork_GetAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsersRepository/GetUser" message="tns:IUnityOfWork_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsersRepository/GetUserResponse" message="tns:IUnityOfWork_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsersRepository/CreateUser" message="tns:IUnityOfWork_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsersRepository/CreateUserResponse" message="tns:IUnityOfWork_CreateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsersRepository/UpdateUser" message="tns:IUnityOfWork_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsersRepository/UpdateUserResponse" message="tns:IUnityOfWork_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsersRepository/DeleteUser" message="tns:IUnityOfWork_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsersRepository/DeleteUserResponse" message="tns:IUnityOfWork_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/Save" message="tns:IUnityOfWork_Save_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/SaveResponse" message="tns:IUnityOfWork_Save_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientDtos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllClientDtos" message="tns:IUnityOfWork_GetAllClientDtos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllClientDtosResponse" message="tns:IUnityOfWork_GetAllClientDtos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDtos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtos" message="tns:IUnityOfWork_GetAllOrderDtos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtosResponse" message="tns:IUnityOfWork_GetAllOrderDtos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserDtos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllUserDtos" message="tns:IUnityOfWork_GetAllUserDtos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllUserDtosResponse" message="tns:IUnityOfWork_GetAllUserDtos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrdersCurrentUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUser" message="tns:IUnityOfWork_GetAllOrdersCurrentUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUserResponse" message="tns:IUnityOfWork_GetAllOrdersCurrentUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrdersCurrentClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClient" message="tns:IUnityOfWork_GetAllOrdersCurrentClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClientResponse" message="tns:IUnityOfWork_GetAllOrdersCurrentClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDtosTheCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompany" message="tns:IUnityOfWork_GetAllOrderDtosTheCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompanyResponse" message="tns:IUnityOfWork_GetAllOrderDtosTheCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserDtoAuthorization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/UserDtoAuthorization" message="tns:IUnityOfWork_UserDtoAuthorization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/UserDtoAuthorizationResponse" message="tns:IUnityOfWork_UserDtoAuthorization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientsCurrentUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUser" message="tns:IUnityOfWork_GetAllClientsCurrentUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUserResponse" message="tns:IUnityOfWork_GetAllClientsCurrentUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/AppUsers" message="tns:IUnityOfWork_AppUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/AppUsersResponse" message="tns:IUnityOfWork_AppUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLoginAndPasswords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/AddLoginAndPasswords" message="tns:IUnityOfWork_AddLoginAndPasswords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/AddLoginAndPasswordsResponse" message="tns:IUnityOfWork_AddLoginAndPasswords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/AddClients" message="tns:IUnityOfWork_AddClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/AddClientsResponse" message="tns:IUnityOfWork_AddClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUnityOfWork/AddOrders" message="tns:IUnityOfWork_AddOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUnityOfWork/AddOrdersResponse" message="tns:IUnityOfWork_AddOrders_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUnityOfWork" type="tns:IUnityOfWork">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllOrders">
+      <soap:operation soapAction="http://tempuri.org/IOrdersRepository/GetAllOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrdersRepository/GetOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrdersRepository/CreateOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrdersRepository/UpdateOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrdersRepository/DeleteOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClients">
+      <soap:operation soapAction="http://tempuri.org/IClientsRepository/GetAllClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClient">
+      <soap:operation soapAction="http://tempuri.org/IClientsRepository/GetClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateClient">
+      <soap:operation soapAction="http://tempuri.org/IClientsRepository/CreateClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClient">
+      <soap:operation soapAction="http://tempuri.org/IClientsRepository/UpdateClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <soap:operation soapAction="http://tempuri.org/IClientsRepository/DeleteClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLoginAndPassword">
+      <soap:operation soapAction="http://tempuri.org/ILoginAndPasswordsRepository/GetAllLoginAndPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginAndPassword">
+      <soap:operation soapAction="http://tempuri.org/ILoginAndPasswordsRepository/GetLoginAndPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLoginAndPassword">
+      <soap:operation soapAction="http://tempuri.org/ILoginAndPasswordsRepository/CreateLoginAndPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoginAndPassword">
+      <soap:operation soapAction="http://tempuri.org/ILoginAndPasswordsRepository/UpdateLoginAndPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoginAndPassword">
+      <soap:operation soapAction="http://tempuri.org/ILoginAndPasswordsRepository/DeleteLoginAndPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <soap:operation soapAction="http://tempuri.org/IUsersRepository/GetAllUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://tempuri.org/IUsersRepository/GetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/IUsersRepository/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IUsersRepository/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IUsersRepository/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/Save" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientDtos">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllClientDtos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDtos">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllOrderDtos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserDtos">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllUserDtos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrdersCurrentUser">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrdersCurrentClient">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderDtosTheCompany">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserDtoAuthorization">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/UserDtoAuthorization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientsCurrentUser">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AppUsers">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/AppUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLoginAndPasswords">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/AddLoginAndPasswords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClients">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/AddClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrders">
+      <soap:operation soapAction="http://tempuri.org/IUnityOfWork/AddOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UnityOfWork">
+    <wsdl:port name="BasicHttpBinding_IUnityOfWork" binding="tns:BasicHttpBinding_IUnityOfWork">
+      <soap:address location="http://localhost:8080/HttpServices" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

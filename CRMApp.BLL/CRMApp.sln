@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{9444093F-CF46-4E47-B58C-8AE76F2392E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMApp.UI", "CRMApp.UI\CRMApp.UI.csproj", "{5C11C973-F66B-4F56-9D19-1B66E0A4747D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{6CAB9595-1017-4A2D-8EAA-D0862A419AB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAuthorizationModule", "UserAuthorizationModule\UserAuthorizationModule.csproj", "{412D5714-EE02-44F8-9597-46FDBA0D92D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainAppModule", "MainAppModule\MainAppModule.csproj", "{51BD7B53-112B-415A-846E-FEF045819181}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Debug|x86.Build.0 = Debug|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Release|x86.ActiveCfg = Release|Any CPU
+		{9444093F-CF46-4E47-B58C-8AE76F2392E7}.Release|x86.Build.0 = Release|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C11C973-F66B-4F56-9D19-1B66E0A4747D}.Release|x86.Build.0 = Release|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Debug|x86.Build.0 = Debug|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9}.Release|x86.Build.0 = Release|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Debug|x86.Build.0 = Debug|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Release|x86.ActiveCfg = Release|Any CPU
+		{51BD7B53-112B-415A-846E-FEF045819181}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{412D5714-EE02-44F8-9597-46FDBA0D92D9} = {6CAB9595-1017-4A2D-8EAA-D0862A419AB8}
+		{51BD7B53-112B-415A-846E-FEF045819181} = {6CAB9595-1017-4A2D-8EAA-D0862A419AB8}
+	EndGlobalSection
+EndGlobal

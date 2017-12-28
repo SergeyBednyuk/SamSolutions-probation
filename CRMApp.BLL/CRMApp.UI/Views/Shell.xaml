@@ -1,0 +1,19 @@
+﻿<Window
+    x:Class="CRMApp.UI.Views.Shell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:CRMApp.UI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:viewModel="clr-namespace:CRMApp.UI.ViewModels"
+    Title="Shell"
+    MinWidth="640"
+    MinHeight="480"
+    d:DataContext="{d:DesignInstance Type=viewModel:ShellViewModel,
+                                     IsDesignTimeCreatable=False}"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+    <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+</Window>
