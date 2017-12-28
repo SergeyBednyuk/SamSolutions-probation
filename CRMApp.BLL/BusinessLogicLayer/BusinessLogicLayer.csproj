@@ -91,6 +91,9 @@
     <Reference Include="UserDbDll">
       <HintPath>..\..\CRMApp.DAL\UserDbDll\bin\Debug\UserDbDll.dll</HintPath>
     </Reference>
+    <Reference Include="UserDbDTo">
+      <HintPath>..\..\CRMApp.DAL\UserDbDTo\bin\Debug\UserDbDTo.dll</HintPath>
+    </Reference>
     <Reference Include="UserDbServices">
       <HintPath>..\..\CRMApp.DAL\UserDbServices\bin\Debug\UserDbServices.dll</HintPath>
     </Reference>
@@ -113,6 +116,9 @@
     <None Include="Properties\DataSources\UserDbDll.Models.LoginAndPassword.datasource" />
     <None Include="Properties\DataSources\UserDbDll.Models.Order.datasource" />
     <None Include="Properties\DataSources\UserDbDll.Models.User.datasource" />
+    <None Include="Properties\DataSources\UserDbDTo.DTO.ClientDto.datasource" />
+    <None Include="Properties\DataSources\UserDbDTo.DTO.OrderDto.datasource" />
+    <None Include="Properties\DataSources\UserDbDTo.DTO.UserDto.datasource" />
     <None Include="Properties\DataSources\UserDbServices.DTO.ClientDto.datasource" />
     <None Include="Properties\DataSources\UserDbServices.DTO.OrderDto.datasource" />
     <None Include="Properties\DataSources\UserDbServices.DTO.UserDto.datasource" />

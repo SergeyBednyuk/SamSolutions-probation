@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UserDbDll.Models" />
-  <xs:import schemaLocation="http://localhost:8080/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" />
+  <xs:import schemaLocation="http://localhost:8080/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" />
   <xs:element name="GetAllOrders">
     <xs:complexType>
       <xs:sequence />
@@ -268,7 +268,7 @@
   <xs:element name="GetAllClientDtosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllClientDtosResult" nillable="true" type="q17:ArrayOfClientDto" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllClientDtosResult" nillable="true" type="q17:ArrayOfClientDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -280,7 +280,7 @@
   <xs:element name="GetAllOrderDtosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllOrderDtosResult" nillable="true" type="q18:ArrayOfOrderDto" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllOrderDtosResult" nillable="true" type="q18:ArrayOfOrderDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -292,7 +292,7 @@
   <xs:element name="GetAllUserDtosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllUserDtosResult" nillable="true" type="q19:ArrayOfUserDto" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllUserDtosResult" nillable="true" type="q19:ArrayOfUserDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -306,7 +306,7 @@
   <xs:element name="GetAllOrdersCurrentUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllOrdersCurrentUserResult" nillable="true" type="q20:ArrayOfOrderDto" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllOrdersCurrentUserResult" nillable="true" type="q20:ArrayOfOrderDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -320,7 +320,7 @@
   <xs:element name="GetAllOrdersCurrentClientResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllOrdersCurrentClientResult" nillable="true" type="q21:ArrayOfOrderDto" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllOrdersCurrentClientResult" nillable="true" type="q21:ArrayOfOrderDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -334,7 +334,7 @@
   <xs:element name="GetAllOrderDtosTheCompanyResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllOrderDtosTheCompanyResult" nillable="true" type="q22:ArrayOfOrderDto" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllOrderDtosTheCompanyResult" nillable="true" type="q22:ArrayOfOrderDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -349,7 +349,7 @@
   <xs:element name="UserDtoAuthorizationResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="UserDtoAuthorizationResult" nillable="true" type="q23:UserDto" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="UserDtoAuthorizationResult" nillable="true" type="q23:UserDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -363,14 +363,14 @@
   <xs:element name="GetAllClientsCurrentUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="GetAllClientsCurrentUserResult" nillable="true" type="q24:ArrayOfClientDto" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="GetAllClientsCurrentUserResult" nillable="true" type="q24:ArrayOfClientDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AppUsers">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="updateUser" nillable="true" type="q25:UserDto" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="updateUser" nillable="true" type="q25:UserDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -382,7 +382,7 @@
   <xs:element name="AddLoginAndPasswords">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="updateLoginAndPassword" nillable="true" type="q26:LoginAndPasswordDto" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="updateLoginAndPassword" nillable="true" type="q26:LoginAndPasswordDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -394,7 +394,7 @@
   <xs:element name="AddClients">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="updateClient" nillable="true" type="q27:ClientDto" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="updateClient" nillable="true" type="q27:ClientDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -406,7 +406,7 @@
   <xs:element name="AddOrders">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/UserDbServices.DTO" minOccurs="0" name="updateOrder" nillable="true" type="q28:OrderDto" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/UserDbDTo.DTO" minOccurs="0" name="updateOrder" nillable="true" type="q28:OrderDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

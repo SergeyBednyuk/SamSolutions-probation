@@ -188,3 +188,17 @@ D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Mai
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule.exe.licenses
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule.exe
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule.pdb
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule.csprojResolveAssemblyReference.cache
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\FunctionalView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\GetAllClientsCurrentUserView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\GetAllClientsView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\GetAllOrdersCurrentUserView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\GetAllOrdersView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\MainAppView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\NameView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\Views\ProgramNameView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\App.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule_MarkupCompile.cache
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule_MarkupCompile.lref
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule.exe
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\MainAppModule.pdb

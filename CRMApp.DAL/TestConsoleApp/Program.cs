@@ -30,11 +30,11 @@ namespace TestConsoleApp
 
 
 
-            using (var service = new UnitOfWork.UnityOfWorkClient("BasicHttpBinding_IUnityOfWork"))
-            {
-                service.AddOrders(new OrderDto() { ClientId = 1, UserId = 1, DateTime = DateTime.Now, Description = "TEST", Name = "TEST" });
+            //using (var service = new UnitOfWork.UnityOfWorkClient("BasicHttpBinding_IUnityOfWork"))
+            //{
+            //    service.AddOrders(new OrderDto() { ClientId = 1, UserId = 1, DateTime = DateTime.Now, Description = "TEST", Name = "TEST" });
 
-            }
+            //}
 
             Console.WriteLine();
 

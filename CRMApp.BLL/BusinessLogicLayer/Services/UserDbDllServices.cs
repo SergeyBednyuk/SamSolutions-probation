@@ -8,7 +8,7 @@ using BusinessLogicLayer.Interfaces;
 using BusinessLogicLayer.UnitOfWork;
 using Prism.Mvvm;
 using UserDbDll.Models;
-using UserDbServices.DTO;
+using UserDbDTo.DTO;
 
 namespace BusinessLogicLayer.Services
 {

@@ -157,3 +157,10 @@ D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule.exe.licenses
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule.exe
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule.pdb
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule.csprojResolveAssemblyReference.cache
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\Views\UserAuthorizationView.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\App.g.cs
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule_MarkupCompile.cache
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule_MarkupCompile.lref
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule.exe
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\UserAuthorizationModule\obj\Debug\UserAuthorizationModule.pdb

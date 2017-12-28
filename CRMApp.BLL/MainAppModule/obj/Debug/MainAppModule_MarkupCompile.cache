@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\obj\Debug\
 MainAppModule
 none
 false
 DEBUG;TRACE
-D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\App.xaml
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\MainAppModule\App.xaml
 81192101296
 
 21-825307697
-931157985280
+93-1841090830
 Views\FunctionalView.xaml;Views\GetAllClientsCurrentUserView.xaml;Views\GetAllClientsView.xaml;Views\GetAllOrdersCurrentUserView.xaml;Views\GetAllOrdersView.xaml;Views\MainAppView.xaml;Views\NameView.xaml;Views\ProgramNameView.xaml;
 
-False
+True
 

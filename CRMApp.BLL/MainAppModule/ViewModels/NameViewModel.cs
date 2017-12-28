@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessLogicLayer.Services;
 using Prism.Mvvm;
-using UserDbServices.DTO;
 
 namespace MainAppModule.ViewModels
 {

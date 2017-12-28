@@ -93,3 +93,7 @@ D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\bin\Debu
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.exe
 D:\Temp\123\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.exe
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.exe.config

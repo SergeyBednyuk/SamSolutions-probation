@@ -142,76 +142,76 @@ namespace BusinessLogicLayer.UnitOfWork {
         System.Threading.Tasks.Task SaveAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllClientDtos", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllClientDtosResponse")]
-        UserDbServices.DTO.ClientDto[] GetAllClientDtos();
+        UserDbDTo.DTO.ClientDto[] GetAllClientDtos();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllClientDtos", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllClientDtosResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.ClientDto[]> GetAllClientDtosAsync();
+        System.Threading.Tasks.Task<UserDbDTo.DTO.ClientDto[]> GetAllClientDtosAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtos", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrderDtosResponse")]
-        UserDbServices.DTO.OrderDto[] GetAllOrderDtos();
+        UserDbDTo.DTO.OrderDto[] GetAllOrderDtos();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtos", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrderDtosResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrderDtosAsync();
+        System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrderDtosAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllUserDtos", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllUserDtosResponse")]
-        UserDbServices.DTO.UserDto[] GetAllUserDtos();
+        UserDbDTo.DTO.UserDto[] GetAllUserDtos();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllUserDtos", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllUserDtosResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.UserDto[]> GetAllUserDtosAsync();
+        System.Threading.Tasks.Task<UserDbDTo.DTO.UserDto[]> GetAllUserDtosAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUser", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUserResponse")]
-        UserDbServices.DTO.OrderDto[] GetAllOrdersCurrentUser(int currentUserId);
+        UserDbDTo.DTO.OrderDto[] GetAllOrdersCurrentUser(int currentUserId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUser", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentUserResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrdersCurrentUserAsync(int currentUserId);
+        System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrdersCurrentUserAsync(int currentUserId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClient", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClientResponse")]
-        UserDbServices.DTO.OrderDto[] GetAllOrdersCurrentClient(int currentClientId);
+        UserDbDTo.DTO.OrderDto[] GetAllOrdersCurrentClient(int currentClientId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClient", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrdersCurrentClientResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrdersCurrentClientAsync(int currentClientId);
+        System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrdersCurrentClientAsync(int currentClientId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompany", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompanyResponse")]
-        UserDbServices.DTO.OrderDto[] GetAllOrderDtosTheCompany(string companyName);
+        UserDbDTo.DTO.OrderDto[] GetAllOrderDtosTheCompany(string companyName);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompany", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllOrderDtosTheCompanyResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrderDtosTheCompanyAsync(string companyName);
+        System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrderDtosTheCompanyAsync(string companyName);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/UserDtoAuthorization", ReplyAction="http://tempuri.org/IUnityOfWork/UserDtoAuthorizationResponse")]
-        UserDbServices.DTO.UserDto UserDtoAuthorization(string login, string password);
+        UserDbDTo.DTO.UserDto UserDtoAuthorization(string login, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/UserDtoAuthorization", ReplyAction="http://tempuri.org/IUnityOfWork/UserDtoAuthorizationResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.UserDto> UserDtoAuthorizationAsync(string login, string password);
+        System.Threading.Tasks.Task<UserDbDTo.DTO.UserDto> UserDtoAuthorizationAsync(string login, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUser", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUserResponse")]
-        UserDbServices.DTO.ClientDto[] GetAllClientsCurrentUser(int currentUserId);
+        UserDbDTo.DTO.ClientDto[] GetAllClientsCurrentUser(int currentUserId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUser", ReplyAction="http://tempuri.org/IUnityOfWork/GetAllClientsCurrentUserResponse")]
-        System.Threading.Tasks.Task<UserDbServices.DTO.ClientDto[]> GetAllClientsCurrentUserAsync(int currentUserId);
+        System.Threading.Tasks.Task<UserDbDTo.DTO.ClientDto[]> GetAllClientsCurrentUserAsync(int currentUserId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AppUsers", ReplyAction="http://tempuri.org/IUnityOfWork/AppUsersResponse")]
-        void AppUsers(UserDbServices.DTO.UserDto updateUser);
+        void AppUsers(UserDbDTo.DTO.UserDto updateUser);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AppUsers", ReplyAction="http://tempuri.org/IUnityOfWork/AppUsersResponse")]
-        System.Threading.Tasks.Task AppUsersAsync(UserDbServices.DTO.UserDto updateUser);
+        System.Threading.Tasks.Task AppUsersAsync(UserDbDTo.DTO.UserDto updateUser);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AddLoginAndPasswords", ReplyAction="http://tempuri.org/IUnityOfWork/AddLoginAndPasswordsResponse")]
-        void AddLoginAndPasswords(UserDbServices.DTO.LoginAndPasswordDto updateLoginAndPassword);
+        void AddLoginAndPasswords(UserDbDTo.DTO.LoginAndPasswordDto updateLoginAndPassword);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AddLoginAndPasswords", ReplyAction="http://tempuri.org/IUnityOfWork/AddLoginAndPasswordsResponse")]
-        System.Threading.Tasks.Task AddLoginAndPasswordsAsync(UserDbServices.DTO.LoginAndPasswordDto updateLoginAndPassword);
+        System.Threading.Tasks.Task AddLoginAndPasswordsAsync(UserDbDTo.DTO.LoginAndPasswordDto updateLoginAndPassword);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AddClients", ReplyAction="http://tempuri.org/IUnityOfWork/AddClientsResponse")]
-        void AddClients(UserDbServices.DTO.ClientDto updateClient);
+        void AddClients(UserDbDTo.DTO.ClientDto updateClient);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AddClients", ReplyAction="http://tempuri.org/IUnityOfWork/AddClientsResponse")]
-        System.Threading.Tasks.Task AddClientsAsync(UserDbServices.DTO.ClientDto updateClient);
+        System.Threading.Tasks.Task AddClientsAsync(UserDbDTo.DTO.ClientDto updateClient);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AddOrders", ReplyAction="http://tempuri.org/IUnityOfWork/AddOrdersResponse")]
-        void AddOrders(UserDbServices.DTO.OrderDto updateOrder);
+        void AddOrders(UserDbDTo.DTO.OrderDto updateOrder);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUnityOfWork/AddOrders", ReplyAction="http://tempuri.org/IUnityOfWork/AddOrdersResponse")]
-        System.Threading.Tasks.Task AddOrdersAsync(UserDbServices.DTO.OrderDto updateOrder);
+        System.Threading.Tasks.Task AddOrdersAsync(UserDbDTo.DTO.OrderDto updateOrder);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -409,99 +409,99 @@ namespace BusinessLogicLayer.UnitOfWork {
             return base.Channel.SaveAsync();
         }
         
-        public UserDbServices.DTO.ClientDto[] GetAllClientDtos() {
+        public UserDbDTo.DTO.ClientDto[] GetAllClientDtos() {
             return base.Channel.GetAllClientDtos();
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.ClientDto[]> GetAllClientDtosAsync() {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.ClientDto[]> GetAllClientDtosAsync() {
             return base.Channel.GetAllClientDtosAsync();
         }
         
-        public UserDbServices.DTO.OrderDto[] GetAllOrderDtos() {
+        public UserDbDTo.DTO.OrderDto[] GetAllOrderDtos() {
             return base.Channel.GetAllOrderDtos();
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrderDtosAsync() {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrderDtosAsync() {
             return base.Channel.GetAllOrderDtosAsync();
         }
         
-        public UserDbServices.DTO.UserDto[] GetAllUserDtos() {
+        public UserDbDTo.DTO.UserDto[] GetAllUserDtos() {
             return base.Channel.GetAllUserDtos();
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.UserDto[]> GetAllUserDtosAsync() {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.UserDto[]> GetAllUserDtosAsync() {
             return base.Channel.GetAllUserDtosAsync();
         }
         
-        public UserDbServices.DTO.OrderDto[] GetAllOrdersCurrentUser(int currentUserId) {
+        public UserDbDTo.DTO.OrderDto[] GetAllOrdersCurrentUser(int currentUserId) {
             return base.Channel.GetAllOrdersCurrentUser(currentUserId);
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrdersCurrentUserAsync(int currentUserId) {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrdersCurrentUserAsync(int currentUserId) {
             return base.Channel.GetAllOrdersCurrentUserAsync(currentUserId);
         }
         
-        public UserDbServices.DTO.OrderDto[] GetAllOrdersCurrentClient(int currentClientId) {
+        public UserDbDTo.DTO.OrderDto[] GetAllOrdersCurrentClient(int currentClientId) {
             return base.Channel.GetAllOrdersCurrentClient(currentClientId);
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrdersCurrentClientAsync(int currentClientId) {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrdersCurrentClientAsync(int currentClientId) {
             return base.Channel.GetAllOrdersCurrentClientAsync(currentClientId);
         }
         
-        public UserDbServices.DTO.OrderDto[] GetAllOrderDtosTheCompany(string companyName) {
+        public UserDbDTo.DTO.OrderDto[] GetAllOrderDtosTheCompany(string companyName) {
             return base.Channel.GetAllOrderDtosTheCompany(companyName);
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.OrderDto[]> GetAllOrderDtosTheCompanyAsync(string companyName) {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.OrderDto[]> GetAllOrderDtosTheCompanyAsync(string companyName) {
             return base.Channel.GetAllOrderDtosTheCompanyAsync(companyName);
         }
         
-        public UserDbServices.DTO.UserDto UserDtoAuthorization(string login, string password) {
+        public UserDbDTo.DTO.UserDto UserDtoAuthorization(string login, string password) {
             return base.Channel.UserDtoAuthorization(login, password);
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.UserDto> UserDtoAuthorizationAsync(string login, string password) {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.UserDto> UserDtoAuthorizationAsync(string login, string password) {
             return base.Channel.UserDtoAuthorizationAsync(login, password);
         }
         
-        public UserDbServices.DTO.ClientDto[] GetAllClientsCurrentUser(int currentUserId) {
+        public UserDbDTo.DTO.ClientDto[] GetAllClientsCurrentUser(int currentUserId) {
             return base.Channel.GetAllClientsCurrentUser(currentUserId);
         }
         
-        public System.Threading.Tasks.Task<UserDbServices.DTO.ClientDto[]> GetAllClientsCurrentUserAsync(int currentUserId) {
+        public System.Threading.Tasks.Task<UserDbDTo.DTO.ClientDto[]> GetAllClientsCurrentUserAsync(int currentUserId) {
             return base.Channel.GetAllClientsCurrentUserAsync(currentUserId);
         }
         
-        public void AppUsers(UserDbServices.DTO.UserDto updateUser) {
+        public void AppUsers(UserDbDTo.DTO.UserDto updateUser) {
             base.Channel.AppUsers(updateUser);
         }
         
-        public System.Threading.Tasks.Task AppUsersAsync(UserDbServices.DTO.UserDto updateUser) {
+        public System.Threading.Tasks.Task AppUsersAsync(UserDbDTo.DTO.UserDto updateUser) {
             return base.Channel.AppUsersAsync(updateUser);
         }
         
-        public void AddLoginAndPasswords(UserDbServices.DTO.LoginAndPasswordDto updateLoginAndPassword) {
+        public void AddLoginAndPasswords(UserDbDTo.DTO.LoginAndPasswordDto updateLoginAndPassword) {
             base.Channel.AddLoginAndPasswords(updateLoginAndPassword);
         }
         
-        public System.Threading.Tasks.Task AddLoginAndPasswordsAsync(UserDbServices.DTO.LoginAndPasswordDto updateLoginAndPassword) {
+        public System.Threading.Tasks.Task AddLoginAndPasswordsAsync(UserDbDTo.DTO.LoginAndPasswordDto updateLoginAndPassword) {
             return base.Channel.AddLoginAndPasswordsAsync(updateLoginAndPassword);
         }
         
-        public void AddClients(UserDbServices.DTO.ClientDto updateClient) {
+        public void AddClients(UserDbDTo.DTO.ClientDto updateClient) {
             base.Channel.AddClients(updateClient);
         }
         
-        public System.Threading.Tasks.Task AddClientsAsync(UserDbServices.DTO.ClientDto updateClient) {
+        public System.Threading.Tasks.Task AddClientsAsync(UserDbDTo.DTO.ClientDto updateClient) {
             return base.Channel.AddClientsAsync(updateClient);
         }
         
-        public void AddOrders(UserDbServices.DTO.OrderDto updateOrder) {
+        public void AddOrders(UserDbDTo.DTO.OrderDto updateOrder) {
             base.Channel.AddOrders(updateOrder);
         }
         
-        public System.Threading.Tasks.Task AddOrdersAsync(UserDbServices.DTO.OrderDto updateOrder) {
+        public System.Threading.Tasks.Task AddOrdersAsync(UserDbDTo.DTO.OrderDto updateOrder) {
             return base.Channel.AddOrdersAsync(updateOrder);
         }
     }
