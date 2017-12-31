@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using BusinessLogicLayer.Services;
-using UserDbServices.DTO;
 
 namespace BusinessLogicLayer
 {
@@ -27,13 +26,11 @@ namespace BusinessLogicLayer
             //}
             //Thread.Sleep(1000);
 
-            //using (UserDbDllServices services = new UserDbDllServices())
-            //{
-            //    foreach (var item in services.GetAllOrders())
-            //    {
-            //        Console.WriteLine("{0} {1}", item.Name, item.Description);
-            //    }
-            //}
+            using (UserDbDllServices services = new UserDbDllServices())
+            {
+                var item = services.GetAllOrderAsync();
+
+            }
 
 
 

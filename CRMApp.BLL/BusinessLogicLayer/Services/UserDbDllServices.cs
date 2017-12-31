@@ -28,15 +28,26 @@ namespace BusinessLogicLayer.Services
             }
         }
 
-        public UserDbDllServices()
-        {
-            //CurrentUserDto = new UserDto();
-        }
+        //public UserDbDllServices()
+        //{
+        //    //CurrentUserDto = new UserDto();
+        //}
 
         //public async Task<ICollection<ClientDto>> GetAllClients()
         //{
         //    return await _unityOfWork.GetAllClientDtosAsync();
         //}
+
+        #region Async Await
+
+        public async Task<ICollection<OrderDto>> GetAllOrderAsync()
+        {
+            var orders = await _unityOfWork.GetAllOrderDtosAsync();
+
+            return orders;
+        }
+
+        #endregion
 
         public ICollection<ClientDto> GetAllClients()
         {

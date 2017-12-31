@@ -242,3 +242,5 @@ D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\CRMApp.UI\obj\Debug\C
 D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\CRMApp.UI\obj\Debug\CRMApp.UI.csproj.GenerateResource.Cache
 D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\CRMApp.UI\obj\Debug\CRMApp.UI.exe
 D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\CRMApp.UI\obj\Debug\CRMApp.UI.pdb
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\CRMApp.UI\bin\Debug\UserDbDTo.dll
+D:\Self-Education\SamSolutions-probation-master\CRMApp.BLL\CRMApp.UI\bin\Debug\UserDbDTo.pdb
